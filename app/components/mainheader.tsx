@@ -21,10 +21,10 @@ export default function MainHeader({ nickname, age, weight }: MainHeaderProps) {
 
     return (
     <header>
-        <div className="main-header grid grid-cols-2 gap-4 bg-gray-300 p-4 rounded-3xl">
-            <div className="header-image border-3 flex items-center justify-center rounded-full min-w-50 min-h-50">Image</div>
+        <div className="main-header grid grid-cols-2 bg-white shadow-sm p-4 rounded-3xl">
+            <div className="header-image border-3 flex items-center justify-center rounded-full w-50 h-50">Image</div>
             
-            <div className="header-info border min-w-50 min-h-50 flex items-center justify-start p-4">
+            <div className="header-info min-w-50 min-h-50 flex items-center justify-start p-4">
                 <ul>
                     <li className="font-bold">{today}</li>
                     <li>Nickname: {headerInfo.nickname}</li>
