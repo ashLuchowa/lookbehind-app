@@ -13,7 +13,7 @@ export default function MainHeader({ nickname, age, weight }: MainHeaderProps) {
         day: 'numeric', month: 'long', year: 'numeric'
     });
 
-    const [headerInfo, setHeaderInfo] = useState({
+    const [headerInfo, setHeaderInfo] = useState<MainHeaderProps>({
         nickname,
         age,
         weight,
