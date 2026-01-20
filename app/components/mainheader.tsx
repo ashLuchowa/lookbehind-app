@@ -1,7 +1,9 @@
 export default function MainHeader() {
   return (
     <header>
-      <h1>Main Header</h1>
+      <div>
+        <div className="header-image">Image</div>
+      </div>
     </header>
   );
 }
