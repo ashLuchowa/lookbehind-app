@@ -3,10 +3,8 @@ import "./style.css";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to My Next.js App</h1>
-
+    <header className="flex justify-center">
       <MainHeader />
-    </div>
+    </header>
   );
 }
