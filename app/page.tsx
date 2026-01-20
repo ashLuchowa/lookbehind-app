@@ -4,7 +4,7 @@ import "./style.css";
 export default function Home() {
   return (
     <header className="flex justify-center">
-      <MainHeader />
+      <MainHeader date="20 Jan 2026" nickname="Ash" age={36} weight={95} />
     </header>
   );
 }
