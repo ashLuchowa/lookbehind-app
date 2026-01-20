@@ -2,3 +2,16 @@
 .main-header {
     grid-template-columns: 1fr 2fr;
 }
+
+// BUTTON
+.addbtn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
