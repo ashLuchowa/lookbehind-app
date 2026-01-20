@@ -1,15 +1,13 @@
-type addform = {
-    title: string
-    textPara: string
-}
-
-export default function AddForm({ title, textPara }: addform) {
+export default function AddForm() {
 
     return (
-        <div className="add-form">
-            <form>
-                <input type="text" />add title
-            </form>
-        </div>
+        <form className="add-form flex flex-col gap-1 bg-white shadow-sm p-4 rounded-3xl">
+            <input 
+                type="text" 
+                placeholder="Add title"
+                className="border"
+            />
+            <button type="submit">Submit</button>
+        </form>
     )
 }
