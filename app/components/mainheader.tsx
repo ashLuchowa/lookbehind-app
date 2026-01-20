@@ -2,16 +2,18 @@
 import { useState } from "react";
 
 type MainHeaderProps = {
-    date: string
     nickname: string
     age: number
     weight: number
 }
 
-export default function MainHeader({ date, nickname, age, weight }: MainHeaderProps) {
+export default function MainHeader({ nickname, age, weight }: MainHeaderProps) {
+
+    const today = new Date().toLocaleDateString('en-Au', {
+        day: 'numeric', month: 'long', year: 'numeric'
+    });
 
     const [headerInfo, setHeaderInfo] = useState({
-        date,
         nickname,
         age,
         weight,
@@ -24,7 +26,7 @@ export default function MainHeader({ date, nickname, age, weight }: MainHeaderPr
             
             <div className="header-info border min-w-50 min-h-50 flex items-center justify-start p-4">
                 <ul>
-                    <li className="font-bold">{headerInfo.date}</li>
+                    <li className="font-bold">{today}</li>
                     <li>Nickname: {headerInfo.nickname}</li>
                     <li>Age: {headerInfo.age}</li>
                     <li>Weight: {headerInfo.weight}kg</li>
